@@ -1,0 +1,728 @@
+Modularity 0.486355335198736
+Resolution 0.3
+Service 2
+org.springframework.samples.petclinic.api.application.VisitsServiceClient
+org.springframework.samples.petclinic.api.dto.Visits
+org.springframework.samples.petclinic.api.boundary.web.ApiGatewayController
+org.springframework.samples.petclinic.api.dto.OwnerDetails
+org.springframework.samples.petclinic.api.application.CustomersServiceClient
+
+Service 1
+org.springframework.samples.petclinic.api.dto.VisitDetails
+org.springframework.samples.petclinic.api.dto.PetDetails
+org.springframework.samples.petclinic.api.dto.PetType
+
+Service 0
+org.springframework.samples.petclinic.customers.web.PetDetails
+org.springframework.samples.petclinic.customers.model.PetType
+org.springframework.samples.petclinic.customers.model.Pet
+org.springframework.samples.petclinic.customers.web.PetResource
+org.springframework.samples.petclinic.customers.model.PetRepository
+org.springframework.samples.petclinic.customers.model.Owner
+org.springframework.samples.petclinic.customers.model.OwnerRepository
+org.springframework.samples.petclinic.customers.web.PetRequest
+org.springframework.samples.petclinic.customers.web.OwnerResource
+
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+
+Modularity 0.4576349182380446
+Resolution 0.3
+Service 2
+org.springframework.samples.petclinic.api.application.VisitsServiceClient
+org.springframework.samples.petclinic.api.dto.Visits
+org.springframework.samples.petclinic.api.boundary.web.ApiGatewayController
+org.springframework.samples.petclinic.api.dto.OwnerDetails
+org.springframework.samples.petclinic.api.application.CustomersServiceClient
+
+Service 1
+org.springframework.samples.petclinic.api.dto.VisitDetails
+org.springframework.samples.petclinic.api.dto.PetDetails
+org.springframework.samples.petclinic.api.dto.PetType
+
+Service 3
+org.springframework.samples.petclinic.customers.web.PetDetails
+org.springframework.samples.petclinic.customers.model.PetType
+org.springframework.samples.petclinic.customers.model.Pet
+org.springframework.samples.petclinic.customers.web.PetResource
+org.springframework.samples.petclinic.customers.model.PetRepository
+org.springframework.samples.petclinic.customers.model.Owner
+org.springframework.samples.petclinic.customers.web.PetRequest
+org.springframework.samples.petclinic.customers.web.OwnerResource
+
+Service 0
+org.springframework.samples.petclinic.customers.model.OwnerRepository
+
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+
+Modularity 0.43056170506154134
+Resolution 0.3
+Service 3
+org.springframework.samples.petclinic.api.application.VisitsServiceClient
+org.springframework.samples.petclinic.api.dto.Visits
+org.springframework.samples.petclinic.api.boundary.web.ApiGatewayController
+
+Service 4
+org.springframework.samples.petclinic.api.dto.VisitDetails
+org.springframework.samples.petclinic.api.dto.PetDetails
+org.springframework.samples.petclinic.api.dto.PetType
+
+Service 2
+org.springframework.samples.petclinic.api.dto.OwnerDetails
+org.springframework.samples.petclinic.api.application.CustomersServiceClient
+
+Service 1
+org.springframework.samples.petclinic.customers.web.PetDetails
+org.springframework.samples.petclinic.customers.model.PetType
+org.springframework.samples.petclinic.customers.model.Pet
+org.springframework.samples.petclinic.customers.web.PetResource
+org.springframework.samples.petclinic.customers.model.PetRepository
+org.springframework.samples.petclinic.customers.model.Owner
+org.springframework.samples.petclinic.customers.web.PetRequest
+
+Service 0
+org.springframework.samples.petclinic.customers.model.OwnerRepository
+org.springframework.samples.petclinic.customers.web.OwnerResource
+
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+
+Modularity 0.39672238217199846
+Resolution 0.4
+Service 1
+org.springframework.samples.petclinic.api.application.VisitsServiceClient
+
+Service 3
+org.springframework.samples.petclinic.api.dto.Visits
+org.springframework.samples.petclinic.api.dto.VisitDetails
+org.springframework.samples.petclinic.api.dto.PetDetails
+org.springframework.samples.petclinic.api.dto.PetType
+
+Service 0
+org.springframework.samples.petclinic.api.boundary.web.ApiGatewayController
+org.springframework.samples.petclinic.api.dto.OwnerDetails
+org.springframework.samples.petclinic.api.application.CustomersServiceClient
+
+Service 2
+org.springframework.samples.petclinic.customers.web.PetDetails
+org.springframework.samples.petclinic.customers.model.PetType
+org.springframework.samples.petclinic.customers.model.Pet
+org.springframework.samples.petclinic.customers.web.PetResource
+org.springframework.samples.petclinic.customers.model.Owner
+org.springframework.samples.petclinic.customers.model.OwnerRepository
+org.springframework.samples.petclinic.customers.web.PetRequest
+org.springframework.samples.petclinic.customers.web.OwnerResource
+
+Service 4
+org.springframework.samples.petclinic.customers.model.PetRepository
+
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+
+Modularity 0.43203041964204364
+Resolution 0.4
+Service 0
+org.springframework.samples.petclinic.api.application.VisitsServiceClient
+org.springframework.samples.petclinic.api.dto.Visits
+org.springframework.samples.petclinic.api.dto.VisitDetails
+org.springframework.samples.petclinic.api.dto.PetDetails
+org.springframework.samples.petclinic.api.dto.PetType
+
+Service 2
+org.springframework.samples.petclinic.api.boundary.web.ApiGatewayController
+org.springframework.samples.petclinic.api.dto.OwnerDetails
+org.springframework.samples.petclinic.api.application.CustomersServiceClient
+
+Service 3
+org.springframework.samples.petclinic.customers.web.PetDetails
+org.springframework.samples.petclinic.customers.model.PetType
+org.springframework.samples.petclinic.customers.model.Pet
+org.springframework.samples.petclinic.customers.web.PetResource
+org.springframework.samples.petclinic.customers.model.PetRepository
+org.springframework.samples.petclinic.customers.model.Owner
+org.springframework.samples.petclinic.customers.web.PetRequest
+org.springframework.samples.petclinic.customers.web.OwnerResource
+
+Service 1
+org.springframework.samples.petclinic.customers.model.OwnerRepository
+
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+
+Modularity 0.43708051271093384
+Resolution 0.4
+Service 3
+org.springframework.samples.petclinic.api.application.VisitsServiceClient
+
+Service 1
+org.springframework.samples.petclinic.api.dto.Visits
+org.springframework.samples.petclinic.api.dto.VisitDetails
+org.springframework.samples.petclinic.api.dto.PetDetails
+org.springframework.samples.petclinic.api.dto.PetType
+
+Service 2
+org.springframework.samples.petclinic.api.boundary.web.ApiGatewayController
+org.springframework.samples.petclinic.api.dto.OwnerDetails
+org.springframework.samples.petclinic.api.application.CustomersServiceClient
+
+Service 0
+org.springframework.samples.petclinic.customers.web.PetDetails
+org.springframework.samples.petclinic.customers.model.PetType
+org.springframework.samples.petclinic.customers.model.Pet
+org.springframework.samples.petclinic.customers.web.PetResource
+org.springframework.samples.petclinic.customers.model.PetRepository
+org.springframework.samples.petclinic.customers.model.Owner
+org.springframework.samples.petclinic.customers.model.OwnerRepository
+org.springframework.samples.petclinic.customers.web.PetRequest
+org.springframework.samples.petclinic.customers.web.OwnerResource
+
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+
+Modularity 0.42788610779464153
+Resolution 0.5
+Service 3
+org.springframework.samples.petclinic.api.application.VisitsServiceClient
+
+Service 4
+org.springframework.samples.petclinic.api.dto.Visits
+org.springframework.samples.petclinic.api.dto.VisitDetails
+org.springframework.samples.petclinic.api.dto.PetDetails
+org.springframework.samples.petclinic.api.dto.PetType
+
+Service 2
+org.springframework.samples.petclinic.api.boundary.web.ApiGatewayController
+org.springframework.samples.petclinic.api.dto.OwnerDetails
+org.springframework.samples.petclinic.api.application.CustomersServiceClient
+
+Service 0
+org.springframework.samples.petclinic.customers.web.PetDetails
+org.springframework.samples.petclinic.customers.model.PetType
+org.springframework.samples.petclinic.customers.model.Pet
+org.springframework.samples.petclinic.customers.web.PetResource
+org.springframework.samples.petclinic.customers.model.PetRepository
+org.springframework.samples.petclinic.customers.model.Owner
+org.springframework.samples.petclinic.customers.web.PetRequest
+
+Service 1
+org.springframework.samples.petclinic.customers.model.OwnerRepository
+org.springframework.samples.petclinic.customers.web.OwnerResource
+
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+
+Modularity 0.43415661894070523
+Resolution 0.5
+Service 3
+org.springframework.samples.petclinic.api.application.VisitsServiceClient
+org.springframework.samples.petclinic.api.dto.Visits
+
+Service 2
+org.springframework.samples.petclinic.api.boundary.web.ApiGatewayController
+org.springframework.samples.petclinic.api.dto.OwnerDetails
+org.springframework.samples.petclinic.api.application.CustomersServiceClient
+
+Service 4
+org.springframework.samples.petclinic.api.dto.VisitDetails
+org.springframework.samples.petclinic.api.dto.PetDetails
+org.springframework.samples.petclinic.api.dto.PetType
+
+Service 1
+org.springframework.samples.petclinic.customers.web.PetDetails
+org.springframework.samples.petclinic.customers.model.PetType
+org.springframework.samples.petclinic.customers.model.Pet
+org.springframework.samples.petclinic.customers.web.PetResource
+org.springframework.samples.petclinic.customers.model.PetRepository
+org.springframework.samples.petclinic.customers.model.Owner
+org.springframework.samples.petclinic.customers.web.PetRequest
+
+Service 0
+org.springframework.samples.petclinic.customers.model.OwnerRepository
+org.springframework.samples.petclinic.customers.web.OwnerResource
+
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+
+Modularity 0.4433510238569976
+Resolution 0.5
+Service 3
+org.springframework.samples.petclinic.api.application.VisitsServiceClient
+org.springframework.samples.petclinic.api.dto.Visits
+
+Service 2
+org.springframework.samples.petclinic.api.boundary.web.ApiGatewayController
+org.springframework.samples.petclinic.api.dto.OwnerDetails
+org.springframework.samples.petclinic.api.application.CustomersServiceClient
+
+Service 0
+org.springframework.samples.petclinic.api.dto.VisitDetails
+org.springframework.samples.petclinic.api.dto.PetDetails
+org.springframework.samples.petclinic.api.dto.PetType
+
+Service 1
+org.springframework.samples.petclinic.customers.web.PetDetails
+org.springframework.samples.petclinic.customers.model.PetType
+org.springframework.samples.petclinic.customers.model.Pet
+org.springframework.samples.petclinic.customers.web.PetResource
+org.springframework.samples.petclinic.customers.model.PetRepository
+org.springframework.samples.petclinic.customers.model.Owner
+org.springframework.samples.petclinic.customers.model.OwnerRepository
+org.springframework.samples.petclinic.customers.web.PetRequest
+org.springframework.samples.petclinic.customers.web.OwnerResource
+
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+
+Modularity 0.4325818178477461
+Resolution 0.6000000000000001
+Service 2
+org.springframework.samples.petclinic.api.application.VisitsServiceClient
+org.springframework.samples.petclinic.api.dto.Visits
+org.springframework.samples.petclinic.api.dto.VisitDetails
+
+Service 3
+org.springframework.samples.petclinic.api.boundary.web.ApiGatewayController
+org.springframework.samples.petclinic.api.dto.OwnerDetails
+org.springframework.samples.petclinic.api.application.CustomersServiceClient
+
+Service 4
+org.springframework.samples.petclinic.api.dto.PetDetails
+org.springframework.samples.petclinic.api.dto.PetType
+
+Service 1
+org.springframework.samples.petclinic.customers.web.PetDetails
+org.springframework.samples.petclinic.customers.model.PetType
+org.springframework.samples.petclinic.customers.model.Pet
+org.springframework.samples.petclinic.customers.web.PetResource
+org.springframework.samples.petclinic.customers.model.PetRepository
+org.springframework.samples.petclinic.customers.model.Owner
+org.springframework.samples.petclinic.customers.web.PetRequest
+
+Service 0
+org.springframework.samples.petclinic.customers.model.OwnerRepository
+org.springframework.samples.petclinic.customers.web.OwnerResource
+
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+
+Modularity 0.43415661894070523
+Resolution 0.6000000000000001
+Service 0
+org.springframework.samples.petclinic.api.application.VisitsServiceClient
+org.springframework.samples.petclinic.api.dto.Visits
+
+Service 2
+org.springframework.samples.petclinic.api.boundary.web.ApiGatewayController
+org.springframework.samples.petclinic.api.dto.OwnerDetails
+org.springframework.samples.petclinic.api.application.CustomersServiceClient
+
+Service 4
+org.springframework.samples.petclinic.api.dto.VisitDetails
+org.springframework.samples.petclinic.api.dto.PetDetails
+org.springframework.samples.petclinic.api.dto.PetType
+
+Service 3
+org.springframework.samples.petclinic.customers.web.PetDetails
+org.springframework.samples.petclinic.customers.model.PetType
+org.springframework.samples.petclinic.customers.model.Pet
+org.springframework.samples.petclinic.customers.web.PetResource
+org.springframework.samples.petclinic.customers.model.PetRepository
+org.springframework.samples.petclinic.customers.model.Owner
+org.springframework.samples.petclinic.customers.web.PetRequest
+
+Service 1
+org.springframework.samples.petclinic.customers.model.OwnerRepository
+org.springframework.samples.petclinic.customers.web.OwnerResource
+
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+
+Modularity 0.36548959769511763
+Resolution 0.6000000000000001
+Service 3
+org.springframework.samples.petclinic.api.application.VisitsServiceClient
+org.springframework.samples.petclinic.api.dto.Visits
+
+Service 2
+org.springframework.samples.petclinic.api.boundary.web.ApiGatewayController
+org.springframework.samples.petclinic.api.dto.OwnerDetails
+org.springframework.samples.petclinic.api.application.CustomersServiceClient
+
+Service 4
+org.springframework.samples.petclinic.api.dto.VisitDetails
+org.springframework.samples.petclinic.api.dto.PetDetails
+org.springframework.samples.petclinic.api.dto.PetType
+
+Service 1
+org.springframework.samples.petclinic.customers.web.PetDetails
+org.springframework.samples.petclinic.customers.model.PetType
+org.springframework.samples.petclinic.customers.model.Pet
+org.springframework.samples.petclinic.customers.web.PetResource
+
+Service 5
+org.springframework.samples.petclinic.customers.model.PetRepository
+org.springframework.samples.petclinic.customers.web.PetRequest
+
+Service 0
+org.springframework.samples.petclinic.customers.model.Owner
+org.springframework.samples.petclinic.customers.model.OwnerRepository
+org.springframework.samples.petclinic.customers.web.OwnerResource
+
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+
+Modularity 0.43415661894070523
+Resolution 0.7000000000000002
+Service 3
+org.springframework.samples.petclinic.api.application.VisitsServiceClient
+org.springframework.samples.petclinic.api.dto.Visits
+
+Service 1
+org.springframework.samples.petclinic.api.boundary.web.ApiGatewayController
+org.springframework.samples.petclinic.api.dto.OwnerDetails
+org.springframework.samples.petclinic.api.application.CustomersServiceClient
+
+Service 2
+org.springframework.samples.petclinic.api.dto.VisitDetails
+org.springframework.samples.petclinic.api.dto.PetDetails
+org.springframework.samples.petclinic.api.dto.PetType
+
+Service 4
+org.springframework.samples.petclinic.customers.web.PetDetails
+org.springframework.samples.petclinic.customers.model.PetType
+org.springframework.samples.petclinic.customers.model.Pet
+org.springframework.samples.petclinic.customers.web.PetResource
+org.springframework.samples.petclinic.customers.model.PetRepository
+org.springframework.samples.petclinic.customers.model.Owner
+org.springframework.samples.petclinic.customers.web.PetRequest
+
+Service 0
+org.springframework.samples.petclinic.customers.model.OwnerRepository
+org.springframework.samples.petclinic.customers.web.OwnerResource
+
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+
+Modularity 0.43415661894070523
+Resolution 0.7000000000000002
+Service 3
+org.springframework.samples.petclinic.api.application.VisitsServiceClient
+org.springframework.samples.petclinic.api.dto.Visits
+
+Service 1
+org.springframework.samples.petclinic.api.boundary.web.ApiGatewayController
+org.springframework.samples.petclinic.api.dto.OwnerDetails
+org.springframework.samples.petclinic.api.application.CustomersServiceClient
+
+Service 2
+org.springframework.samples.petclinic.api.dto.VisitDetails
+org.springframework.samples.petclinic.api.dto.PetDetails
+org.springframework.samples.petclinic.api.dto.PetType
+
+Service 4
+org.springframework.samples.petclinic.customers.web.PetDetails
+org.springframework.samples.petclinic.customers.model.PetType
+org.springframework.samples.petclinic.customers.model.Pet
+org.springframework.samples.petclinic.customers.web.PetResource
+org.springframework.samples.petclinic.customers.model.PetRepository
+org.springframework.samples.petclinic.customers.model.Owner
+org.springframework.samples.petclinic.customers.web.PetRequest
+
+Service 0
+org.springframework.samples.petclinic.customers.model.OwnerRepository
+org.springframework.samples.petclinic.customers.web.OwnerResource
+
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+
+Modularity 0.43415661894070523
+Resolution 0.7000000000000002
+Service 3
+org.springframework.samples.petclinic.api.application.VisitsServiceClient
+org.springframework.samples.petclinic.api.dto.Visits
+
+Service 2
+org.springframework.samples.petclinic.api.boundary.web.ApiGatewayController
+org.springframework.samples.petclinic.api.dto.OwnerDetails
+org.springframework.samples.petclinic.api.application.CustomersServiceClient
+
+Service 4
+org.springframework.samples.petclinic.api.dto.VisitDetails
+org.springframework.samples.petclinic.api.dto.PetDetails
+org.springframework.samples.petclinic.api.dto.PetType
+
+Service 1
+org.springframework.samples.petclinic.customers.web.PetDetails
+org.springframework.samples.petclinic.customers.model.PetType
+org.springframework.samples.petclinic.customers.model.Pet
+org.springframework.samples.petclinic.customers.web.PetResource
+org.springframework.samples.petclinic.customers.model.PetRepository
+org.springframework.samples.petclinic.customers.model.Owner
+org.springframework.samples.petclinic.customers.web.PetRequest
+
+Service 0
+org.springframework.samples.petclinic.customers.model.OwnerRepository
+org.springframework.samples.petclinic.customers.web.OwnerResource
+
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+
+Modularity 0.49266379091686696
+Resolution 0.8000000000000003
+Service 0
+org.springframework.samples.petclinic.api.application.VisitsServiceClient
+org.springframework.samples.petclinic.api.dto.Visits
+org.springframework.samples.petclinic.api.boundary.web.ApiGatewayController
+org.springframework.samples.petclinic.api.dto.VisitDetails
+org.springframework.samples.petclinic.api.dto.PetDetails
+org.springframework.samples.petclinic.api.dto.PetType
+org.springframework.samples.petclinic.api.dto.OwnerDetails
+org.springframework.samples.petclinic.api.application.CustomersServiceClient
+
+Service 1
+org.springframework.samples.petclinic.customers.web.PetDetails
+org.springframework.samples.petclinic.customers.model.PetType
+org.springframework.samples.petclinic.customers.model.Pet
+org.springframework.samples.petclinic.customers.web.PetResource
+org.springframework.samples.petclinic.customers.model.PetRepository
+org.springframework.samples.petclinic.customers.model.Owner
+org.springframework.samples.petclinic.customers.model.OwnerRepository
+org.springframework.samples.petclinic.customers.web.PetRequest
+org.springframework.samples.petclinic.customers.web.OwnerResource
+
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+
+Modularity 0.49266379091686696
+Resolution 0.8000000000000003
+Service 1
+org.springframework.samples.petclinic.api.application.VisitsServiceClient
+org.springframework.samples.petclinic.api.dto.Visits
+org.springframework.samples.petclinic.api.boundary.web.ApiGatewayController
+org.springframework.samples.petclinic.api.dto.VisitDetails
+org.springframework.samples.petclinic.api.dto.PetDetails
+org.springframework.samples.petclinic.api.dto.PetType
+org.springframework.samples.petclinic.api.dto.OwnerDetails
+org.springframework.samples.petclinic.api.application.CustomersServiceClient
+
+Service 0
+org.springframework.samples.petclinic.customers.web.PetDetails
+org.springframework.samples.petclinic.customers.model.PetType
+org.springframework.samples.petclinic.customers.model.Pet
+org.springframework.samples.petclinic.customers.web.PetResource
+org.springframework.samples.petclinic.customers.model.PetRepository
+org.springframework.samples.petclinic.customers.model.Owner
+org.springframework.samples.petclinic.customers.model.OwnerRepository
+org.springframework.samples.petclinic.customers.web.PetRequest
+org.springframework.samples.petclinic.customers.web.OwnerResource
+
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+
+Modularity 0.49266379091686696
+Resolution 0.8000000000000003
+Service 0
+org.springframework.samples.petclinic.api.application.VisitsServiceClient
+org.springframework.samples.petclinic.api.dto.Visits
+org.springframework.samples.petclinic.api.boundary.web.ApiGatewayController
+org.springframework.samples.petclinic.api.dto.VisitDetails
+org.springframework.samples.petclinic.api.dto.PetDetails
+org.springframework.samples.petclinic.api.dto.PetType
+org.springframework.samples.petclinic.api.dto.OwnerDetails
+org.springframework.samples.petclinic.api.application.CustomersServiceClient
+
+Service 1
+org.springframework.samples.petclinic.customers.web.PetDetails
+org.springframework.samples.petclinic.customers.model.PetType
+org.springframework.samples.petclinic.customers.model.Pet
+org.springframework.samples.petclinic.customers.web.PetResource
+org.springframework.samples.petclinic.customers.model.PetRepository
+org.springframework.samples.petclinic.customers.model.Owner
+org.springframework.samples.petclinic.customers.model.OwnerRepository
+org.springframework.samples.petclinic.customers.web.PetRequest
+org.springframework.samples.petclinic.customers.web.OwnerResource
+
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+
+Modularity 0.49266379091686696
+Resolution 0.9000000000000001
+Service 0
+org.springframework.samples.petclinic.api.application.VisitsServiceClient
+org.springframework.samples.petclinic.api.dto.Visits
+org.springframework.samples.petclinic.api.boundary.web.ApiGatewayController
+org.springframework.samples.petclinic.api.dto.VisitDetails
+org.springframework.samples.petclinic.api.dto.PetDetails
+org.springframework.samples.petclinic.api.dto.PetType
+org.springframework.samples.petclinic.api.dto.OwnerDetails
+org.springframework.samples.petclinic.api.application.CustomersServiceClient
+
+Service 1
+org.springframework.samples.petclinic.customers.web.PetDetails
+org.springframework.samples.petclinic.customers.model.PetType
+org.springframework.samples.petclinic.customers.model.Pet
+org.springframework.samples.petclinic.customers.web.PetResource
+org.springframework.samples.petclinic.customers.model.PetRepository
+org.springframework.samples.petclinic.customers.model.Owner
+org.springframework.samples.petclinic.customers.model.OwnerRepository
+org.springframework.samples.petclinic.customers.web.PetRequest
+org.springframework.samples.petclinic.customers.web.OwnerResource
+
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+
+Modularity 0.49266379091686696
+Resolution 0.9000000000000001
+Service 1
+org.springframework.samples.petclinic.api.application.VisitsServiceClient
+org.springframework.samples.petclinic.api.dto.Visits
+org.springframework.samples.petclinic.api.boundary.web.ApiGatewayController
+org.springframework.samples.petclinic.api.dto.VisitDetails
+org.springframework.samples.petclinic.api.dto.PetDetails
+org.springframework.samples.petclinic.api.dto.PetType
+org.springframework.samples.petclinic.api.dto.OwnerDetails
+org.springframework.samples.petclinic.api.application.CustomersServiceClient
+
+Service 0
+org.springframework.samples.petclinic.customers.web.PetDetails
+org.springframework.samples.petclinic.customers.model.PetType
+org.springframework.samples.petclinic.customers.model.Pet
+org.springframework.samples.petclinic.customers.web.PetResource
+org.springframework.samples.petclinic.customers.model.PetRepository
+org.springframework.samples.petclinic.customers.model.Owner
+org.springframework.samples.petclinic.customers.model.OwnerRepository
+org.springframework.samples.petclinic.customers.web.PetRequest
+org.springframework.samples.petclinic.customers.web.OwnerResource
+
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+
+Modularity 0.49266379091686696
+Resolution 0.9000000000000001
+Service 1
+org.springframework.samples.petclinic.api.application.VisitsServiceClient
+org.springframework.samples.petclinic.api.dto.Visits
+org.springframework.samples.petclinic.api.boundary.web.ApiGatewayController
+org.springframework.samples.petclinic.api.dto.VisitDetails
+org.springframework.samples.petclinic.api.dto.PetDetails
+org.springframework.samples.petclinic.api.dto.PetType
+org.springframework.samples.petclinic.api.dto.OwnerDetails
+org.springframework.samples.petclinic.api.application.CustomersServiceClient
+
+Service 0
+org.springframework.samples.petclinic.customers.web.PetDetails
+org.springframework.samples.petclinic.customers.model.PetType
+org.springframework.samples.petclinic.customers.model.Pet
+org.springframework.samples.petclinic.customers.web.PetResource
+org.springframework.samples.petclinic.customers.model.PetRepository
+org.springframework.samples.petclinic.customers.model.Owner
+org.springframework.samples.petclinic.customers.model.OwnerRepository
+org.springframework.samples.petclinic.customers.web.PetRequest
+org.springframework.samples.petclinic.customers.web.OwnerResource
+
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+
+Modularity 0.49266379091686696
+Resolution 1.0000000000000002
+Service 1
+org.springframework.samples.petclinic.api.application.VisitsServiceClient
+org.springframework.samples.petclinic.api.dto.Visits
+org.springframework.samples.petclinic.api.boundary.web.ApiGatewayController
+org.springframework.samples.petclinic.api.dto.VisitDetails
+org.springframework.samples.petclinic.api.dto.PetDetails
+org.springframework.samples.petclinic.api.dto.PetType
+org.springframework.samples.petclinic.api.dto.OwnerDetails
+org.springframework.samples.petclinic.api.application.CustomersServiceClient
+
+Service 0
+org.springframework.samples.petclinic.customers.web.PetDetails
+org.springframework.samples.petclinic.customers.model.PetType
+org.springframework.samples.petclinic.customers.model.Pet
+org.springframework.samples.petclinic.customers.web.PetResource
+org.springframework.samples.petclinic.customers.model.PetRepository
+org.springframework.samples.petclinic.customers.model.Owner
+org.springframework.samples.petclinic.customers.model.OwnerRepository
+org.springframework.samples.petclinic.customers.web.PetRequest
+org.springframework.samples.petclinic.customers.web.OwnerResource
+
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+
+Modularity 0.49266379091686696
+Resolution 1.0000000000000002
+Service 1
+org.springframework.samples.petclinic.api.application.VisitsServiceClient
+org.springframework.samples.petclinic.api.dto.Visits
+org.springframework.samples.petclinic.api.boundary.web.ApiGatewayController
+org.springframework.samples.petclinic.api.dto.VisitDetails
+org.springframework.samples.petclinic.api.dto.PetDetails
+org.springframework.samples.petclinic.api.dto.PetType
+org.springframework.samples.petclinic.api.dto.OwnerDetails
+org.springframework.samples.petclinic.api.application.CustomersServiceClient
+
+Service 0
+org.springframework.samples.petclinic.customers.web.PetDetails
+org.springframework.samples.petclinic.customers.model.PetType
+org.springframework.samples.petclinic.customers.model.Pet
+org.springframework.samples.petclinic.customers.web.PetResource
+org.springframework.samples.petclinic.customers.model.PetRepository
+org.springframework.samples.petclinic.customers.model.Owner
+org.springframework.samples.petclinic.customers.model.OwnerRepository
+org.springframework.samples.petclinic.customers.web.PetRequest
+org.springframework.samples.petclinic.customers.web.OwnerResource
+
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+
+Modularity 0.49266379091686696
+Resolution 1.0000000000000002
+Service 0
+org.springframework.samples.petclinic.api.application.VisitsServiceClient
+org.springframework.samples.petclinic.api.dto.Visits
+org.springframework.samples.petclinic.api.boundary.web.ApiGatewayController
+org.springframework.samples.petclinic.api.dto.VisitDetails
+org.springframework.samples.petclinic.api.dto.PetDetails
+org.springframework.samples.petclinic.api.dto.PetType
+org.springframework.samples.petclinic.api.dto.OwnerDetails
+org.springframework.samples.petclinic.api.application.CustomersServiceClient
+
+Service 1
+org.springframework.samples.petclinic.customers.web.PetDetails
+org.springframework.samples.petclinic.customers.model.PetType
+org.springframework.samples.petclinic.customers.model.Pet
+org.springframework.samples.petclinic.customers.web.PetResource
+org.springframework.samples.petclinic.customers.model.PetRepository
+org.springframework.samples.petclinic.customers.model.Owner
+org.springframework.samples.petclinic.customers.model.OwnerRepository
+org.springframework.samples.petclinic.customers.web.PetRequest
+org.springframework.samples.petclinic.customers.web.OwnerResource
+
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+

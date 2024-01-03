@@ -1,0 +1,117 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.16.1/vis.css" type="text/css" />
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.16.1/vis-network.min.js"> </script>
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+
+<style type="text/css">
+
+        #mynetwork {
+            width: 1500;
+            height: 800;
+            background-color: #ffffff;
+            border: 1px solid lightgray;
+            position: relative;
+            float: left;
+        }
+
+        
+
+        
+
+        
+</style>
+
+</head>
+
+<body>
+<div id = "mynetwork"></div>
+
+
+<script type="text/javascript">
+
+    // initialize global variables.
+    var edges;
+    var nodes;
+    var network; 
+    var container;
+    var options, data;
+
+    
+    // This method is responsible for drawing the graph, returns the drawn network
+    function drawGraph() {
+        var container = document.getElementById('mynetwork');
+        
+        
+
+        // parsing and collecting nodes and edges from the python
+        nodes = new vis.DataSet([{"color": "#fed9a6", "id": "spring-petclinic-config-server.org.springframework.samples.petclinic.config.ConfigServerApplication", "label": "ConfigServerApplication", "shape": "dot", "title": "spring-petclinic-config-server.org.springframework.samples.petclinic.config.ConfigServerApplication"}, {"color": "#fbb4ae", "id": "spring-petclinic-discovery-server.org.springframework.samples.petclinic.discovery.DiscoveryServerApplication", "label": "DiscoveryServerApplication", "shape": "dot", "title": "spring-petclinic-discovery-server.org.springframework.samples.petclinic.discovery.DiscoveryServerApplication"}, {"color": "#ccebc5", "id": "spring-petclinic-admin-server.org.springframework.samples.petclinic.admin.SpringBootAdminApplication", "label": "SpringBootAdminApplication", "shape": "dot", "title": "spring-petclinic-admin-server.org.springframework.samples.petclinic.admin.SpringBootAdminApplication"}, {"color": "#ffffcc", "id": "spring-petclinic-vets-service.org.springframework.samples.petclinic.vets.model.Specialty", "label": "Specialty", "shape": "dot", "title": "spring-petclinic-vets-service.org.springframework.samples.petclinic.vets.model.Specialty"}, {"color": "#ffffcc", "id": "spring-petclinic-vets-service.org.springframework.samples.petclinic.vets.model.Vet", "label": "Vet", "shape": "dot", "title": "spring-petclinic-vets-service.org.springframework.samples.petclinic.vets.model.Vet"}, {"color": "#ffffcc", "id": "spring-petclinic-vets-service.org.springframework.samples.petclinic.vets.model.VetRepository", "label": "VetRepository", "shape": "dot", "title": "spring-petclinic-vets-service.org.springframework.samples.petclinic.vets.model.VetRepository"}, {"color": "#ffffcc", "id": "spring-petclinic-vets-service.org.springframework.samples.petclinic.vets.system.CacheConfig", "label": "CacheConfig", "shape": "dot", "title": "spring-petclinic-vets-service.org.springframework.samples.petclinic.vets.system.CacheConfig"}, {"color": "#ffffcc", "id": "spring-petclinic-vets-service.org.springframework.samples.petclinic.vets.system.VetsProperties$Cache", "label": "VetsProperties$Cache", "shape": "dot", "title": "spring-petclinic-vets-service.org.springframework.samples.petclinic.vets.system.VetsProperties$Cache"}, {"color": "#ffffcc", "id": "spring-petclinic-vets-service.org.springframework.samples.petclinic.vets.system.VetsProperties", "label": "VetsProperties", "shape": "dot", "title": "spring-petclinic-vets-service.org.springframework.samples.petclinic.vets.system.VetsProperties"}, {"color": "#ffffcc", "id": "spring-petclinic-vets-service.org.springframework.samples.petclinic.vets.web.VetResource", "label": "VetResource", "shape": "dot", "title": "spring-petclinic-vets-service.org.springframework.samples.petclinic.vets.web.VetResource"}, {"color": "#ffffcc", "id": "spring-petclinic-vets-service.org.springframework.samples.petclinic.vets.VetsServiceApplication", "label": "VetsServiceApplication", "shape": "dot", "title": "spring-petclinic-vets-service.org.springframework.samples.petclinic.vets.VetsServiceApplication"}, {"color": "#e5d8bd", "id": "spring-petclinic-api-gateway.org.springframework.samples.petclinic.api.application.CustomersServiceClient", "label": "CustomersServiceClient", "shape": "dot", "title": "spring-petclinic-api-gateway.org.springframework.samples.petclinic.api.application.CustomersServiceClient"}, {"color": "#e5d8bd", "id": "spring-petclinic-api-gateway.org.springframework.samples.petclinic.api.application.VisitsServiceClient", "label": "VisitsServiceClient", "shape": "dot", "title": "spring-petclinic-api-gateway.org.springframework.samples.petclinic.api.application.VisitsServiceClient"}, {"color": "#e5d8bd", "id": "spring-petclinic-api-gateway.org.springframework.samples.petclinic.api.boundary.web.ApiGatewayController", "label": "ApiGatewayController", "shape": "dot", "title": "spring-petclinic-api-gateway.org.springframework.samples.petclinic.api.boundary.web.ApiGatewayController"}, {"color": "#e5d8bd", "id": "spring-petclinic-api-gateway.org.springframework.samples.petclinic.api.dto.OwnerDetails", "label": "OwnerDetails", "shape": "dot", "title": "spring-petclinic-api-gateway.org.springframework.samples.petclinic.api.dto.OwnerDetails"}, {"color": "#e5d8bd", "id": "spring-petclinic-api-gateway.org.springframework.samples.petclinic.api.dto.PetDetails", "label": "PetDetails", "shape": "dot", "title": "spring-petclinic-api-gateway.org.springframework.samples.petclinic.api.dto.PetDetails"}, {"color": "#e5d8bd", "id": "spring-petclinic-api-gateway.org.springframework.samples.petclinic.api.dto.PetType", "label": "PetType", "shape": "dot", "title": "spring-petclinic-api-gateway.org.springframework.samples.petclinic.api.dto.PetType"}, {"color": "#e5d8bd", "id": "spring-petclinic-api-gateway.org.springframework.samples.petclinic.api.dto.VisitDetails", "label": "VisitDetails", "shape": "dot", "title": "spring-petclinic-api-gateway.org.springframework.samples.petclinic.api.dto.VisitDetails"}, {"color": "#e5d8bd", "id": "spring-petclinic-api-gateway.org.springframework.samples.petclinic.api.dto.Visits", "label": "Visits", "shape": "dot", "title": "spring-petclinic-api-gateway.org.springframework.samples.petclinic.api.dto.Visits"}, {"color": "#e5d8bd", "id": "spring-petclinic-api-gateway.org.springframework.samples.petclinic.api.ApiGatewayApplication", "label": "ApiGatewayApplication", "shape": "dot", "title": "spring-petclinic-api-gateway.org.springframework.samples.petclinic.api.ApiGatewayApplication"}, {"color": "#decbe4", "id": "spring-petclinic-customers-service.org.springframework.samples.petclinic.customers.model.Owner", "label": "Owner", "shape": "dot", "title": "spring-petclinic-customers-service.org.springframework.samples.petclinic.customers.model.Owner"}, {"color": "#decbe4", "id": "spring-petclinic-customers-service.org.springframework.samples.petclinic.customers.model.OwnerRepository", "label": "OwnerRepository", "shape": "dot", "title": "spring-petclinic-customers-service.org.springframework.samples.petclinic.customers.model.OwnerRepository"}, {"color": "#decbe4", "id": "spring-petclinic-customers-service.org.springframework.samples.petclinic.customers.model.Pet", "label": "Pet", "shape": "dot", "title": "spring-petclinic-customers-service.org.springframework.samples.petclinic.customers.model.Pet"}, {"color": "#decbe4", "id": "spring-petclinic-customers-service.org.springframework.samples.petclinic.customers.model.PetRepository", "label": "PetRepository", "shape": "dot", "title": "spring-petclinic-customers-service.org.springframework.samples.petclinic.customers.model.PetRepository"}, {"color": "#decbe4", "id": "spring-petclinic-customers-service.org.springframework.samples.petclinic.customers.model.PetType", "label": "PetType", "shape": "dot", "title": "spring-petclinic-customers-service.org.springframework.samples.petclinic.customers.model.PetType"}, {"color": "#decbe4", "id": "spring-petclinic-customers-service.org.springframework.samples.petclinic.customers.web.OwnerResource", "label": "OwnerResource", "shape": "dot", "title": "spring-petclinic-customers-service.org.springframework.samples.petclinic.customers.web.OwnerResource"}, {"color": "#decbe4", "id": "spring-petclinic-customers-service.org.springframework.samples.petclinic.customers.web.PetDetails", "label": "PetDetails", "shape": "dot", "title": "spring-petclinic-customers-service.org.springframework.samples.petclinic.customers.web.PetDetails"}, {"color": "#decbe4", "id": "spring-petclinic-customers-service.org.springframework.samples.petclinic.customers.web.PetRequest", "label": "PetRequest", "shape": "dot", "title": "spring-petclinic-customers-service.org.springframework.samples.petclinic.customers.web.PetRequest"}, {"color": "#decbe4", "id": "spring-petclinic-customers-service.org.springframework.samples.petclinic.customers.web.PetResource", "label": "PetResource", "shape": "dot", "title": "spring-petclinic-customers-service.org.springframework.samples.petclinic.customers.web.PetResource"}, {"color": "#decbe4", "id": "spring-petclinic-customers-service.org.springframework.samples.petclinic.customers.web.ResourceNotFoundException", "label": "ResourceNotFoundException", "shape": "dot", "title": "spring-petclinic-customers-service.org.springframework.samples.petclinic.customers.web.ResourceNotFoundException"}, {"color": "#decbe4", "id": "spring-petclinic-customers-service.org.springframework.samples.petclinic.customers.CustomersServiceApplication", "label": "CustomersServiceApplication", "shape": "dot", "title": "spring-petclinic-customers-service.org.springframework.samples.petclinic.customers.CustomersServiceApplication"}, {"color": "#b3cde3", "id": "spring-petclinic-visits-service.org.springframework.samples.petclinic.visits.model.Visit", "label": "Visit", "shape": "dot", "title": "spring-petclinic-visits-service.org.springframework.samples.petclinic.visits.model.Visit"}, {"color": "#b3cde3", "id": "spring-petclinic-visits-service.org.springframework.samples.petclinic.visits.model.VisitRepository", "label": "VisitRepository", "shape": "dot", "title": "spring-petclinic-visits-service.org.springframework.samples.petclinic.visits.model.VisitRepository"}, {"color": "#b3cde3", "id": "spring-petclinic-visits-service.org.springframework.samples.petclinic.visits.web.VisitResource$Visits", "label": "VisitResource$Visits", "shape": "dot", "title": "spring-petclinic-visits-service.org.springframework.samples.petclinic.visits.web.VisitResource$Visits"}, {"color": "#b3cde3", "id": "spring-petclinic-visits-service.org.springframework.samples.petclinic.visits.web.VisitResource", "label": "VisitResource", "shape": "dot", "title": "spring-petclinic-visits-service.org.springframework.samples.petclinic.visits.web.VisitResource"}, {"color": "#b3cde3", "id": "spring-petclinic-visits-service.org.springframework.samples.petclinic.visits.VisitsServiceApplication", "label": "VisitsServiceApplication", "shape": "dot", "title": "spring-petclinic-visits-service.org.springframework.samples.petclinic.visits.VisitsServiceApplication"}, {"color": "#e5d8bd", "id": "micro_2", "label": "micro_2", "shape": "box", "title": "micro_2"}, {"color": "#fed9a6", "id": "micro_3", "label": "micro_3", "shape": "box", "title": "micro_3"}, {"color": "#b3cde3", "id": "micro_7", "label": "micro_7", "shape": "box", "title": "micro_7"}, {"color": "#ffffcc", "id": "micro_8", "label": "micro_8", "shape": "box", "title": "micro_8"}, {"color": "#e5d8bd", "id": "micro_6", "label": "micro_6", "shape": "box", "title": "micro_6"}, {"color": "#decbe4", "id": "micro_1", "label": "micro_1", "shape": "box", "title": "micro_1"}, {"color": "#fbb4ae", "id": "discovery-server", "label": "discovery-server", "shape": "ellipsis", "title": "discovery-server"}, {"color": "#b3cde3", "id": "visits-service", "label": "visits-service", "shape": "ellipsis", "title": "visits-service"}, {"color": "#ccebc5", "id": "admin-server", "label": "admin-server", "shape": "ellipsis", "title": "admin-server"}, {"color": "#decbe4", "id": "customers-service", "label": "customers-service", "shape": "ellipsis", "title": "customers-service"}, {"color": "#fed9a6", "id": "config-server", "label": "config-server", "shape": "ellipsis", "title": "config-server"}, {"color": "#ffffcc", "id": "vets-service", "label": "vets-service", "shape": "ellipsis", "title": "vets-service"}, {"color": "#e5d8bd", "id": "api-gateway", "label": "api-gateway", "shape": "ellipsis", "title": "api-gateway"}]);
+        edges = new vis.DataSet([{"from": "spring-petclinic-config-server.org.springframework.samples.petclinic.config.ConfigServerApplication", "to": "micro_3"}, {"from": "spring-petclinic-discovery-server.org.springframework.samples.petclinic.discovery.DiscoveryServerApplication", "to": "micro_3"}, {"from": "spring-petclinic-admin-server.org.springframework.samples.petclinic.admin.SpringBootAdminApplication", "to": "micro_3"}, {"from": "spring-petclinic-vets-service.org.springframework.samples.petclinic.vets.model.Specialty", "to": "micro_8"}, {"from": "spring-petclinic-vets-service.org.springframework.samples.petclinic.vets.model.Vet", "to": "micro_8"}, {"from": "spring-petclinic-vets-service.org.springframework.samples.petclinic.vets.model.VetRepository", "to": "micro_8"}, {"from": "spring-petclinic-vets-service.org.springframework.samples.petclinic.vets.system.CacheConfig", "to": "micro_8"}, {"from": "spring-petclinic-vets-service.org.springframework.samples.petclinic.vets.system.VetsProperties$Cache", "to": "micro_8"}, {"from": "spring-petclinic-vets-service.org.springframework.samples.petclinic.vets.system.VetsProperties", "to": "micro_8"}, {"from": "spring-petclinic-vets-service.org.springframework.samples.petclinic.vets.web.VetResource", "to": "micro_8"}, {"from": "spring-petclinic-vets-service.org.springframework.samples.petclinic.vets.VetsServiceApplication", "to": "micro_8"}, {"from": "spring-petclinic-api-gateway.org.springframework.samples.petclinic.api.application.CustomersServiceClient", "to": "micro_8"}, {"from": "spring-petclinic-api-gateway.org.springframework.samples.petclinic.api.application.VisitsServiceClient", "to": "micro_8"}, {"from": "spring-petclinic-api-gateway.org.springframework.samples.petclinic.api.boundary.web.ApiGatewayController", "to": "micro_8"}, {"from": "spring-petclinic-api-gateway.org.springframework.samples.petclinic.api.dto.OwnerDetails", "to": "micro_8"}, {"from": "spring-petclinic-api-gateway.org.springframework.samples.petclinic.api.dto.PetDetails", "to": "micro_6"}, {"from": "spring-petclinic-api-gateway.org.springframework.samples.petclinic.api.dto.PetType", "to": "micro_2"}, {"from": "spring-petclinic-api-gateway.org.springframework.samples.petclinic.api.dto.VisitDetails", "to": "micro_2"}, {"from": "spring-petclinic-api-gateway.org.springframework.samples.petclinic.api.dto.Visits", "to": "micro_2"}, {"from": "spring-petclinic-api-gateway.org.springframework.samples.petclinic.api.ApiGatewayApplication", "to": "micro_2"}, {"from": "spring-petclinic-customers-service.org.springframework.samples.petclinic.customers.model.Owner", "to": "micro_1"}, {"from": "spring-petclinic-customers-service.org.springframework.samples.petclinic.customers.model.OwnerRepository", "to": "micro_1"}, {"from": "spring-petclinic-customers-service.org.springframework.samples.petclinic.customers.model.Pet", "to": "micro_1"}, {"from": "spring-petclinic-customers-service.org.springframework.samples.petclinic.customers.model.PetRepository", "to": "micro_1"}, {"from": "spring-petclinic-customers-service.org.springframework.samples.petclinic.customers.model.PetType", "to": "micro_1"}, {"from": "spring-petclinic-customers-service.org.springframework.samples.petclinic.customers.web.OwnerResource", "to": "micro_1"}, {"from": "spring-petclinic-customers-service.org.springframework.samples.petclinic.customers.web.PetDetails", "to": "micro_1"}, {"from": "spring-petclinic-customers-service.org.springframework.samples.petclinic.customers.web.PetRequest", "to": "micro_1"}, {"from": "spring-petclinic-customers-service.org.springframework.samples.petclinic.customers.web.PetResource", "to": "micro_1"}, {"from": "spring-petclinic-customers-service.org.springframework.samples.petclinic.customers.web.ResourceNotFoundException", "to": "micro_1"}, {"from": "spring-petclinic-customers-service.org.springframework.samples.petclinic.customers.CustomersServiceApplication", "to": "micro_1"}, {"from": "spring-petclinic-visits-service.org.springframework.samples.petclinic.visits.model.Visit", "to": "micro_7"}, {"from": "spring-petclinic-visits-service.org.springframework.samples.petclinic.visits.model.VisitRepository", "to": "micro_7"}, {"from": "spring-petclinic-visits-service.org.springframework.samples.petclinic.visits.web.VisitResource$Visits", "to": "micro_7"}, {"from": "spring-petclinic-visits-service.org.springframework.samples.petclinic.visits.web.VisitResource", "to": "micro_7"}, {"from": "spring-petclinic-visits-service.org.springframework.samples.petclinic.visits.VisitsServiceApplication", "to": "micro_7"}]);
+
+        // adding nodes and edges to the graph
+        data = {nodes: nodes, edges: edges};
+
+        var options = {
+    "configure": {
+        "enabled": false
+    },
+    "edges": {
+        "color": {
+            "inherit": true
+        },
+        "smooth": {
+            "enabled": false,
+            "type": "continuous"
+        }
+    },
+    "interaction": {
+        "dragNodes": true,
+        "hideEdgesOnDrag": false,
+        "hideNodesOnDrag": false
+    },
+    "physics": {
+        "enabled": true,
+        "forceAtlas2Based": {
+            "avoidOverlap": 0,
+            "centralGravity": 0.01,
+            "damping": 0.4,
+            "gravitationalConstant": -50,
+            "springConstant": 0.08,
+            "springLength": 100
+        },
+        "solver": "forceAtlas2Based",
+        "stabilization": {
+            "enabled": true,
+            "fit": true,
+            "iterations": 1000,
+            "onlyDynamicEdges": false,
+            "updateInterval": 50
+        }
+    }
+};
+        
+        
+
+        
+
+        network = new vis.Network(container, data, options);
+	 
+        
+
+
+        
+
+        return network;
+
+    }
+
+    drawGraph();
+
+</script>
+</body>
+</html>
