@@ -1,5 +1,5 @@
 # Artifacts Package
-This git repository includes all the code and data to validate the results of our paper titled Extracting Microservices from Monolithic Systems using Deep Reinforcement Learning” which has been submitted the Empirical Software Engineering journal.
+This git repository includes all the code and data to validate the results of our paper titled "Extracting Microservices from Monolithic Systems using Deep Reinforcement Learning” which has been submitted the Empirical Software Engineering journal.
 
 The repository provides :
 * The detailed results achieved by our proposed approach and the baselines we compare with including the decomposition that they generated.
