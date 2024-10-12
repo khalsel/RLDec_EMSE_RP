@@ -1,5 +1,5 @@
 # Artifacts Package
-This git repository includes all the code and data to validate the results of our paper titled "Extracting Microservices from Monolithic Systems using Deep Reinforcement Learning” which has been submitted the Empirical Software Engineering journal.
+This git repository includes all the code and data to validate the results of our paper titled "Extracting Microservices from Monolithic Systems using Deep Reinforcement Learning” which has been submitted and published in the Empirical Software Engineering journal.
 
 The repository provides :
 * The detailed results achieved by our proposed approach and the baselines we compare with including the decomposition that they generated.
@@ -26,3 +26,15 @@ Description of the structure of the repository:
 * train_config.json: The hyperparameters used for training the model.
 * rq2_hyperparameters.md: The hyperparameters used for the decomposition approaches in RQ2
 
+If this work was useful for your research, please consider citing it:
+```bibtex
+@article{
+rldec,
+title={Extracting microservices from monolithic systems using deep reinforcement learning},
+journal={Empirical Software Engineering},
+author={khaled sellami and Mohamed Aymen Saied},
+doi={10.1007/s10664-024-10547-4},
+url={http://doi.org/10.1007/s10664-024-10547-4},
+year={2025}
+}
+```
